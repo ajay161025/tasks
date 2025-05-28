@@ -16,7 +16,7 @@ mongoose
   .catch(() => {
     console.log("mongodb database not connected");
   });
-// middlewares
+
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(helmet());
