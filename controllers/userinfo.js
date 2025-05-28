@@ -19,6 +19,10 @@ export const authentication = async (req, res, next) => {
   const user = await userModel.findById(decode.userId);
   if (!user) {
     return res.status(404).json({ message: "Token expired" });
+
+
+
+    
   }
   req.ajay = user;
 
